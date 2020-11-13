@@ -1,4 +1,88 @@
-h1{
-    color:rgb(148, 148, 243);
-    background-color: burlywood;
+/* This is a comment */ 
+*,*::before, *::after{
+    box-sizing:inherit;
+}
+/* this is an id, best to use classes whenever possilbe rather than ids*/
+#the-one{
+    color:pink;
+}
+
+html{
+    box-sizing:border border-box ;
+    font-size:100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: height 1.5rem;  
+}
+a:visited{
+    color: violet;
+    background-color: white;
+}
+a:hover {
+    color: rgb(139, 139, 236)
+}
+a:active{ 
+    color:red;
+}
+
+.new-color {
+    color: rgb(145, 81, 145);
+    background-color: white;
+}
+
+h1 {
+    color: rgba(204, 109, 125, 0.692);
+    background-color: white;
+    font-size: 3rem;
+    line-height: 3.5rem ;
+    margin-left: 0.5rem;
+}
+
+/* makeimages responsive */
+img{ 
+    width: 100%;
+    height: auto;
+    display:block;
+    padding-bottom: 1rem ;
+
+}
+
+a{
+    text-decoration:none;
+}
+
+body{
+    background-color: white;
+    max-width: 1000px;
+    margin: 0 auto; 
+    background-image:url("/img/pissypickle.jpg") ;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+p{
+    font-family:'Courier New', Courier, monospace ;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.3rem;
+}
+.box {
+    width: 300px;
+    padding: 30px;
+    border: 20px solid rgb(83, 83, 167);
+    margin: 30px;
+}
+
+.standard-box {
+    background-color: lightblue;
+    box-sizing: content-box ;
+}
+.border-box {
+    background-color: rgb(230, 189, 223);
+    border-bottom: 40px solid;
+    padding: 10px 20px 30px 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+   box-sizing: border-box;
 }
